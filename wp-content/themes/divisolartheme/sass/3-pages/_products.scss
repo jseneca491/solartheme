@@ -1,0 +1,15 @@
+.prod-sec{
+    .prod-row{
+        display: flex;
+        align-items: center;
+        @include respond-to-max(1300){
+            display: block;
+        }
+        .et_pb_column{
+            @include respond-to-max(1300){
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

@@ -1,0 +1,106 @@
+.header-sec {
+    padding: 20px !important;
+
+    .header-row {
+        display: flex;
+        align-items: center;
+
+        .et_pb_column {
+            @include respond-to-max (981) {
+                margin-bottom: 0 !important;
+            }
+            .et_pb_module {
+                .et_pb_menu__wrap {
+                    .et_mobile_nav_menu {
+                       
+                        padding: 5%;
+                        left: 0;
+                        
+                        right: 0;
+                        
+                        @include respond-to-max (xxl) {
+                            display: block !important;
+                        }
+                        .et_mobile_menu{
+                            top: unset !important;
+                            text-align: center;
+                            position: fixed;
+                        }
+                        .mobile_nav{
+                            ul#mobile_menu1{
+                                list-style-type: none;
+                                li.phone-btn{
+                                    background-color: $prim;
+                                    &:hover{
+                                        background-color: $sec;
+                                    }
+                                    a{  
+                                        font-weight: bold;
+                                        color: $white !important;
+                                        &:hover{
+                                            color: $white !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .et_pb_menu__menu {
+                       
+                            @include respond-to-max (xxl) {
+                                display: none !important;
+                            }
+                       
+
+                        .et-menu-nav {
+                            ul {
+                                &#menu-main-menu {
+                                    display: flex;
+                                    align-items: center;
+                                }
+
+                                li {
+                                    &.phone-btn {
+                                        background-color: $prim;
+                                        padding: 15px 25px 12px 25px;
+                                        border-radius: 5px;
+                                        margin: 0;
+
+                                        &:hover {
+                                            background-color: $sec;
+                                            transition: all 0.3s ease-in;
+                                        }
+
+
+                                        a {
+                                            color: #fff !important;
+                                            font-weight: bold;
+
+                                            &:hover {
+                                                color: #fff !important;
+                                                font-weight: bold;
+                                            }
+                                        }
+                                    }
+
+                                    margin: 0;
+                                    padding: 0 20px;
+
+                                    a {
+                                        font-weight: 400;
+
+                                        &:hover {
+                                            color: $prim !important;
+                                            font-weight: 500;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

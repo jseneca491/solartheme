@@ -1,0 +1,285 @@
+#dct_foorer {
+    .footer-row{
+        @include respond-to-max(l){
+        display: block;
+        }
+        .et_pb_column {
+            
+            margin: 0;
+            width: 100%;
+            
+            &.fot-col1{
+                width: 45%!important;
+                margin-right: 10px;
+                @include respond-to-max(l){
+                    width: 100%!important;
+                    margin-bottom: 40px;
+                    
+
+                    }
+                    .et_pb_module{
+                        @include respond-to-max(l){
+                            text-align: center;
+                            margin: 0 !important;
+                            }
+                    }
+            }
+            &.fot-col2{
+                width: 20%!important;
+                margin-right: 10px;
+                @include respond-to-max(l){
+                    width: 100%!important;
+                    margin-bottom: 40px;
+                    }
+                    .et_pb_module{
+                        .et_pb_text_inner{
+                            a{
+                                color: $white;
+                                &:hover{
+                                    color: $prim;
+                                }
+                            }
+                        }
+                        @include respond-to-max(l){
+                            text-align: center;
+                            margin: 0!important;
+                            }
+                    }
+            }
+            &.fot-col3{
+                width: 20%!important;
+                margin-right: 10px;
+                @include respond-to-max(l){
+                    width: 100%!important;
+                    margin-bottom: 40px;
+                    }
+                    .et_pb_module{
+                        .et_pb_text_inner{
+                            p{
+                                a{
+                                    color: $white;
+                                    &:hover{
+                                        color: $prim;
+                                    }
+                                }
+                            }
+                        }
+                        @include respond-to-max(l){
+                            text-align: center;
+                            margin: 0 !important;
+                            }
+                    }
+            }
+            &.fot-col4{
+                width: 30%!important;
+                margin-right: 30px;
+                @include respond-to-max(l){
+                    width: 100%!important;
+                    margin-bottom: 40px;
+                    }
+                    .et_pb_module{
+                        @include respond-to-max(l){
+                            text-align: center;
+                            margin: 0 !important;
+                            }
+                    }
+            }
+            &.fot-col5{
+                width: 20%!important;
+                @include respond-to-max(l){
+                    width: 100%!important;
+                    }
+                    .et_pb_module{
+                        @include respond-to-max(l){
+                            text-align: center;
+                            margin: 0 !important;
+                            }
+                    }
+            }
+        }
+    }
+    .footer-1strow {
+       
+        .et_pb_column {
+            .et_pb_module{
+                .et_pb_blurb_content{
+                    @include respond-to(s){
+                        display: flex;
+                        align-items: center;
+                    }
+                    .et_pb_main_blurb_image{
+                        @include respond-to(s){
+                            margin: 0;
+                        }
+                    }
+                    .et_pb_blurb_container{
+                        @include respond-to-max(s){
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+            .footer-form {
+                .et_pb_code_inner {
+                    #gform_wrapper_1 {
+                        #gform_1{
+                        .gform_footer{
+                            justify-content: end;
+                        }
+                                input#gform_submit_button_1{
+                                    color: #FFFFFF !important;
+                                    border-color: $prim;
+                                    font-size: 16px;
+                                    font-family: 'Titillium Web', Helvetica, Arial, Lucida, sans-serif !important;
+                                    font-weight: 700 !important;
+                                    background-color: $prim;
+                                    &:hover{
+                                        background-color: $sec;
+                                        border-color: $sec;
+                                    }
+                                
+                            }
+                            .gform-body{
+                                #gform_fields_1{
+                                    row-gap: 25px;
+                                    ::placeholder{
+                                        color: #000 !important;
+                                    }
+                                    .gfield{
+                                    input, textarea, select {
+                                        height: 65px;
+                                        background-color: #F6F6F6;
+                                        border: 0;
+                                        display: flex;
+                                        align-items: center;
+                                    }
+                                   
+                                    
+                                }
+                                }
+                            }
+                            
+                        }
+                        .gform_heading {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    ::placeholder{
+        color: #000 !important;
+    }
+
+    .footer-row {
+
+        .et_pb_column {
+            .newsletter{
+                .et_pb_code_inner{
+                    #gform_wrapper_2{
+                        .gform_heading{
+                            display: none;
+                        }
+                        #gform_2{
+                            display: flex;
+                            @include respond-to-max(l){
+                                justify-content: center;
+                                margin-top: 30px;
+                            }
+                            .gform_footer{
+                                input#gform_submit_button_2{
+                                    margin-left: -3px;
+                                    font-family: 'Titillium Web';
+                                    font-weight: bold;
+                                    background-color:$prim;
+                                    min-height: 48px;
+                                    border: 1px solid $prim;
+                                    padding: 0 40px;
+                                    @include respond-to-max(600){
+                                        padding: 0 20px
+                                    }
+                                    &:hover{
+                                        background-color:$sec;
+                                        border: 1px solid $sec;
+                                    }
+                                }
+                            }
+                            .gform-body{
+                                padding: 0;
+                                #gform_fields_2{
+                                    #field_2_1{
+                                        .ginput_container{
+                                            
+                                            ::placeholder{
+                                                color: $white !important;
+                                            }
+                                            input{
+                                                min-height: 48px;
+                                                background: none !important;
+                                                border-color: $prim;
+                                                color: $white;
+                                               
+                                               
+                                            }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .gform_footer {
+                               margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            .et_pb_module {
+                .et_pb_blurb_content {
+                    display: flex;
+                    align-items: center;
+                    @include respond-to-max(600){
+                        display: block;
+                        text-align: center;
+
+                    }
+                    
+                    @include respond-to-max(l){
+                        justify-content: center;
+                    }
+
+                    .et_pb_main_blurb_image {
+                        margin-bottom: 0;
+                    }
+                    .et_pb_blurb_container{
+                        @include respond-to-max(600){
+                           padding: 0;
+                            text-align: center;
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+.last-sec{
+    .last-row{
+        .et_pb_column{
+            .et_pb_module{
+                .et_pb_text_inner{
+                p{
+                    a{
+                        color: $white !important;
+                        &:hover{
+                            color: $prim !important;
+                        }
+                    }
+                  
+                }
+            }
+            }
+        }
+    }
+}

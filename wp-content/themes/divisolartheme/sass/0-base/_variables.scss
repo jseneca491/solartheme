@@ -1,0 +1,38 @@
+$img: '../images/';
+
+$breakpoints: (
+  xxs: 320px,
+  400: 400px,
+  xs: 480px,
+  600: 600px,
+  s: 768px,
+  800: 800px,
+  981: 981px,
+  m: 992px,
+  1150: 1150px,
+  l: 1200px,
+  1300: 1300px,
+  1350: 1350px,
+  xl: 1400px,
+  1500: 1500px,
+  xxl: 1600px,
+  xxxl: 1800px,
+  sl: 2000px,
+);
+
+// SIZING
+$base: 62.5%;
+
+// COLOR
+$prim: #7EC15F;
+$sec: #3C6431;
+$default: #000;
+$white: #fff;
+
+//FONTS
+$font-fallback: Helvetica,Arial,sans-serif;
+$f-header: 'Titillium Web',Helvetica,Arial,Lucida,sans-serif;
+$f-default: 'Titillium Web',Helvetica,Arial,Lucida,sans-serif;
+
+//SPACING
+$mbottom: 15px;

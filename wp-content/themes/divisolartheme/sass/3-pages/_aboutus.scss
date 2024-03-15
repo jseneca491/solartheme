@@ -1,0 +1,19 @@
+.about-sec{
+    .about-row{
+        display: flex;
+        align-items: center;
+        @include respond-to-max(1150){
+            display: block ;
+        }
+        .et_pb_column{
+            @include respond-to-max(1150){
+                width: 100% ;
+            }
+            &.et_pb_column_1_2{
+                @include respond-to-max(1150){
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
